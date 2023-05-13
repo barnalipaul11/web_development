@@ -5,7 +5,8 @@
 }
 
 body{
-    background-image: linear-gradient(to right, black , rgb(8, 32, 8));
+    background-image: linear-gradient(to right, rgba(2, 2, 2, 0.958) ,#6b8e23);
+
 }
 
 .container{
@@ -17,13 +18,17 @@ body{
 }
 
 .heading{
-    color: white;
+    transition: all 2s ease-in 3s;
+    transform: rotateX(90);
+    font-weight: bold;
+    color: whitesmoke;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 
     
 }
 p{
+    color: whitesmoke;
    margin: 20px;
    font-size: larger;
 }
@@ -32,12 +37,12 @@ p{
     flex-basis: 50%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap :8px;
+    gap :6px;
     grid-auto-rows: 120px;
 }
 
 .box{
-    background-size: cover;
+    background-size:cover;
     background-position: top;
     background-color: black;
     background-blend-mode: hard-light;
@@ -48,7 +53,7 @@ p{
     }
 
 .box:hover{
-    background-color: #999;
+    background-color: #c0adad;
     background-position: center;
     border-bottom: 0 0 4px #fff;
 }
@@ -58,7 +63,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-row: span 2;
+    grid-row: span 3;
+    
 
 }
 .box2{
@@ -73,6 +79,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-row: span 2;
    
     
 }
@@ -92,6 +99,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+     grid-row: span 2;
 }
 .box7{
     display: flex;
